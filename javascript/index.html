@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Source Tracker</title>
+</head>
+<body>
+  <h1>Source Tracker Play Ground</h1>
+  <input class="url-input"/>
+  <button onclick="queryUrl()">Fetch</button>
+  <div class="source-tracker-container"></div>
+  <script src="./index.js"></script>
+  <script>
+    var st = new SourceTracker();
+    st.install('.source-tracker-container');
+
+    function queryUrl () {
+      fetch('.gitignore')
+    }
+  </script>
+</body>
+</html>
